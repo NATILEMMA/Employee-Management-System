@@ -1,4 +1,5 @@
 from . import __version__ as app_version
+from . import route as route
 
 app_name = "demo_app"
 app_title = "Demo App"
@@ -138,6 +139,13 @@ app_license = "MIT"
 
 # Overriding Methods
 # ------------------------------
+
+website_route_rules = [
+        {'from_route':'/property/detail/<docname>', 'to_route':'property/detail'},
+        
+        # {'from_route':'/agent/detail/<name>', 'to_route':'agent/detail'},
+    ]
+
 #
 # override_whitelisted_methods = {
 # 	"frappe.desk.doctype.event.event.get_events": "demo_app.event.get_events"
