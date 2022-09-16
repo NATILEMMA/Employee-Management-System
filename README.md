@@ -140,7 +140,7 @@ Now press (Ctrl-X) to exit
 ### STEP 16 install employee latest version in bench & site
 
     
-    bench get-app https://github.com/frappe/erpnext 
+    bench get-app https://github.com/NATILEMMA/Employee-Management-System.git 
 
     bench --site [] install-app employee
     
