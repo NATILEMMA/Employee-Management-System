@@ -12,9 +12,10 @@ def fill_attendance(**args):
  
     })
     doc.insert()
+    doc.save()
     doc.submit()
     frappe.db.commit()
-    doc.save()
+  
  
 
 
